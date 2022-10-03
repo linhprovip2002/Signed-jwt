@@ -8,6 +8,7 @@ const token = require('../until/token');
 const cookie = require('cookie-parser')
 dotenv.config();
 
+
 let refeshtokens=[];//create array inclue refresh token.. represents the database
 class authController {
     // register
@@ -86,7 +87,7 @@ class authController {
     {
         //take refresh token from user
         const refeshtoken = req.cookies.refreshToken;
-        console.log(refeshtoken);
+        //console.log(refeshtoken);
         if(!refeshtoken) return res.status(401).json("You're not authentication");
        
         if(refeshtokens.includes(refeshtoken)) //check
@@ -106,7 +107,7 @@ class authController {
             const newAccessToken = token.GenerateAccpectToken(user);  
             const newRefreshToken = token.GenerateRefeshAccpectToken(user);
             refeshtokens.push(newRefreshToken); //  put newRefreshToken in an array
-            console.log(refeshtokens);
+            //console.log(refeshtokens);
             res.cookie("refreshToken",newRefreshToken,{
                 httpOnly:true,
                 secure:false,

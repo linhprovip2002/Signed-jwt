@@ -23,7 +23,7 @@ module.exports =
          admin: user.admin
       },process.env.JWT_access_Key,
       {
-         expiresIn:"20s"
+         expiresIn:"20d"
       });
    }
 }
