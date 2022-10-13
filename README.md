@@ -1,5 +1,5 @@
-# Authentication JWT
-- <p align="center">
+
+ <p align="center">
   <a href="https://expressjs.com/" target="blank"><img src="https://howstack.com/post/wp-content/uploads/2020/08/Express-1024x449.png" width="320" alt="Express Logo" /></a>
 </p>
   Fast, unopinionated, minimalist web framework for [Node.js](http://nodejs.org).
