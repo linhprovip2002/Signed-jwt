@@ -21,7 +21,7 @@ $ npm install
 
 ```bash
 # development
-$ npm run start
+$ npm start
 ```
 ## ENV
 JWT_access_Key = secretkey
